@@ -13,22 +13,34 @@
     android:layout_height="wrap_content"
     android:text="LOGIN"
     android:textSize="30sp"/>
-    <EditText
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:id="@+id/emailTextLogin"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="12"
-        android:id="@+id/emailTextLogin"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:layout_margin="10sp"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:id="@+id/passTextLogin"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_margin="10sp"/>
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:id="@+id/passTextLogin"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_margin="10sp"/>
+    </android.support.design.widget.TextInputLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
