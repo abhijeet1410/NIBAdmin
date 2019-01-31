@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".LoginActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="LOGIN"
+    android:textSize="30sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:id="@+id/emailTextLogin"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:id="@+id/passTextLogin"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_margin="10sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Login"
+        android:onClick="doLogin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot you password?"
+        android:textStyle="italic"
+        android:layout_margin="10sp"
+        android:onClick="doForgotPassword"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Admin? SignUp Here"
+        android:textStyle="italic"
+        android:layout_margin="10sp"
+        android:onClick="goToRegisterActivity"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
